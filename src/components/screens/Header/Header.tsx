@@ -68,7 +68,7 @@ const Header = () => {
                                                 </td>
                                                 <td>
                                                     <Tooltip title="Explore" arrow>
-                                                        <Link to={"/"}>
+                                                        <Link to={"/explore"}>
                                                             <img alt={"Discover"} src={DiscoverIcon}/>
                                                         </Link>
                                                     </Tooltip>

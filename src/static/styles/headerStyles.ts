@@ -3,11 +3,13 @@ import {makeStyles} from '@mui/styles';
 export const headerStyles = makeStyles((theme) => ({
     root: {
         position: "fixed",
+        zIndex: 9999,
         top: 0,
         left: 0,
         right: 0,
         boxShadow: '0 1px 6px rgb(0 0 0 / 30%)',
         padding: '2px 0',
+        background: '#FFFFFF',
     },
 
     header: {
