@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar';
 
 
 const __css_tab_box_section = css`
-
+     padding: 10px;
     .tab-menu {
         display: flex;
         justify-content: space-between;
@@ -48,11 +48,14 @@ const __css_tab_box_section = css`
                                     cursor: pointer;
                                     text-decoration: none;
                                 }
+                                }
                                 .username {
+                                  
                                     span {
                                         font-size: 12px;
                                         color: #b0b3b6;
-                                        background: red;
+                                        font-family: "Montserrat";
+                                        margin-top: -3px;
                                     }
                                     
                                 }
@@ -80,7 +83,7 @@ const __css_tab_box_section = css`
     }
 `;
 
-const TabBox = () => {
+const TabBox = ({name, username} : {name: string, username: string}) => {
     return(
         <React.Fragment>
             <div className={__css_tab_box_section} >
@@ -101,9 +104,9 @@ const TabBox = () => {
                                     <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                                     <div className="user-data">
                                         <div className="title"> 
-                                            <strong><a href="">Rob McLeod</a></strong>
+                                            <strong><a href="">{name}</a></strong>
                                         </div>
-                                        <div className="username"><span>@nd32</span></div>
+                                        <div className="username"><span>@{username}</span></div>
                                     </div>
                                 </div>
                                 <div className="actions">
